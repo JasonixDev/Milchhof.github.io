@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Milchhof Zinna</title>
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/fixed.css">
+	<script src="js/slider.js"></script>	
+</head>
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<!-- Start Home Section-->
+	<div id="home">
+	
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+			<a class="navbar-brand" href="#"><img src="img/mainImage.jpg"> Milchhof Zinna</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#home">Startseite</a></li>
+					<li class="nav-item"><a class="nav-link" href="#course">Stall</a></li>
+					<li class="nav-item"><a class="nav-link" href="#features">Hofmollkerei</a></li>
+					<li class="nav-item"><a class="nav-link" href="#clients">Sortiment</a></li>										
+					<li class="nav-item"><a class="nav-link" href="#contact">Impressum</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navigation-->
+	
+		<!-- Start landing Page Section-->
+		<div class="landing">
+			<div class="home-wrap">
+				<div class="home-inner">
+	
+				</div>
+			</div>
+		</div>
+	
+		<div class="caption text-center">
+			<h1>Willkommen bei Milchhof Zinna</h1>
+			<h3>Familie Kouwert</h3>
+			Am Anger 7 04860 Torgau | 03421 713641
+		</div>
+		<!-- End landing Page Section-->
+	
+	</div>
+	<!-- End Home Section-->
+	
+	
+	<!-- Start Course Section-->
+	<div id="course" class="offset">	
+		<div class="col-12 narrow text-center">
+			<h1>Unser Milchhof</h1>
+			<p class="lead">Unser Stall steht in 04860 Torgau OT Zinna und wurde 2009 gebaut.    
+				Wir haben 230 Milchkühe und 240 Jungrinder der Rassen Holstein und Jersey. Insgesamt bewirtschaften wir eine Fläche von 195 ha, wovon ein viertel Eigentum ist. Die restlichen Flächen stehen uns dank langfristigen Pachtverträgen zur Verfügung. Wir bauen dort neben Gras, welches zu Heu und Anwelksilage verarbeitet wird, auch Futterroggen und Mais an. Gelegentlich, wenn die Früchtfolge es zulässt, wird Gerste oder Weizen angebaut. Stroh und Kraftfutter werden zugekauft. Wir verzichten auf den Einsatz von Soja.</p>
+								<p class="lead">Unsere Jungrinder werden von einem Jerseybullen gedeckt und kalben im Alter von 24-25 Monaten ab. Die ersten Jerseyfärsen aus eigener Aufzucht melken wir seit August 2011.</p>
+				<p class="lead">Die leckeren Hofmolkereiprodukte werden aus der Milch unserer Jerseykühe hersgestellt.</p>
+			<!-- <a class="btn btn-secondary btn-md" href="#" target="_blank">Bootstrap Course</a> -->
+		</div>		
+		<!-- Images kaelberstall -->		
+		<div class="slider-display-container">
+			<h4 style="text-align: center;">Bilder Kälberstall</h4>
+			<img class="mySlides" src="img/kalb1.jfif">
+			<img class="mySlides" src="img/kalb2.jfif">
+			<img class="mySlides" src="img/kalb3.jfif">
+			<img class="mySlides" src="img/kalb4.jfif">
+			<img class="mySlides" src="img/kalb5.jfif">
+			<img class="mySlides" src="img/kalb6.png">
+			<img class="mySlides" src="img/kalb7.jfif">
+			<img class="mySlides" src="img/kalb8.jfif">
+			<img class="mySlides" src="img/kalb9.png">
+			<img class="mySlides" src="img/kalb10.jfif">
+			<img class="mySlides" src="img/kalb11.jfif">
+			<img class="mySlides" src="img/kalb12.jfif">
+			<img class="mySlides" src="img/kalb13.jfif">
+			<img class="mySlides" src="img/kalb14.jfif">
+			<label id="slider1Label" style="display: block; text-align: center;">1 von 14</label>
+			<button class="sliderButton-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="sliderButton-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>	
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			  document.getElementById('slider1Label').innerHTML = slideIndex + ' von 14'
+			}
+			
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+			</script>
+  	</div>
+	<!-- images landarbeit -->				
+	<div class="slider2-display-container">
+		<h4 style="text-align: center;">Bilder Landarbeit</h4>
+		<img class="mySlides2" src="img/land1.jfif">
+		<img class="mySlides2" src="img/land2.jfif">
+		<img class="mySlides2" src="img/land3.jfif">
+		<img class="mySlides2" src="img/land4.jfif">
+		<img class="mySlides2" src="img/land5.jfif">
+		<img class="mySlides2" src="img/land6.jfif">
+		<img class="mySlides2" src="img/land7.jfif">
+		<img class="mySlides2" src="img/land8.jfif">
+		<img class="mySlides2" src="img/land9.jfif">
+		<img class="mySlides2" src="img/land10.jpg">
+		<img class="mySlides2" src="img/land11.jpg">
+		<img class="mySlides2" src="img/land12.jpg">
+		<img class="mySlides2" src="img/land13.jpg">
+		<img class="mySlides2" src="img/land14.jfif">
+		<label id="slider2Label" style="display: block; text-align: center;">1 von 14</label>
+		<button class="sliderButton2-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+		<button class="sliderButton2-display-right" onclick="plusDivs2(1)">&#10095;</button>
+	</div>	
+	<script>
+		var slideIndex2 = 1;
+		showDivs2(slideIndex2);
+		
+		function plusDivs2(n) {
+		  showDivs2(slideIndex2 += n);
+		  document.getElementById('slider2Label').innerHTML = slideIndex2 + ' von 14'
+		}
+		
+		function showDivs2(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides2");
+		  if (n > x.length) {slideIndex2 = 1}
+		  if (n < 1) {slideIndex2 = x.length}
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  x[slideIndex2-1].style.display = "block";  
+		}
+		</script>
+  	</div>
+	<!-- End Course Section-->
+	
+	
+	<!-- Start Features Section-->
+	<div id="features" class="offset">
+		<!-- Start Jumbotron-->
+		<div class="jumbotron">
+			<div class="narrow">	
+				<div class="col-12">
+					<h3 class="heading text-center">Unsere Hofmolkerei</h3>
+					<!-- <div class="heading-underline"></div> -->
+				</div>
+				<div style="display: flex;">
+					<img src="img/molk1.jfif"/>
+					<div>
+						<p style="padding-left: 5px;">Nach Jahrelanger, hobbymäßiger Herstellung von Schnittkäse haben wir im November 2015 den Schritt zur Eröffnung einer eigenen Hofmolkerei gewagt.</p>
+						<p style="padding-left: 5px;">Neben unbehandelter und naturbelassener Roh- und pasteurisierter Milch, von unseren Holstein und Jersey Kühen, stellen wir auch "Jersey Gold Naturjoghurt", "Jersey Gold Frischkäse" sowie "Jersey Gold Schnittkäse" her, welcher von uns aus reiner Jerseymilch hergestellt wird.</p>
+						<p style="padding-left: 5px;">Desweiteren bieten wir Eier von unseren freilaufenden Hühnern und gelegentlich Bienenhonig vom lokalen Imker an.</p>
+					</div>					
+				</div>	
+			</div><!-- End of the Row-->
+	
+		</div><!--End Narrow-->			
+	</div><!-- End Jumbotron-->
+		
+	</div>
+	<!-- End Features Section-->
+
+	<!-- Start Clients Section-->
+	<div id="clients" class="offset">
+		<div class="col-12 text-center">
+			<h3 class="heading">Unser Sortiment</h3>
+			<div class="heading-underline"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/hofladen.jfif">
+					</div>
+					<div class="col-md-8">
+						<cite>Hofladen</cite>
+						<hr class="clients-hr">
+						<blockquote>In unserem Hofladen bieten wir jederzeit unser volles Sortimient an.</blockquote>												
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/milch.png">
+					</div>
+					<div class="col-md-8">
+						<cite>Unsere Milch</cite>
+						<hr class="clients-hr">
+						<blockquote>Je nach Bedarf füllen wir Rohmilch mehrmals täglich frisch ab.	Außerdem bieten wir auch pasteurisierte Milch an. Zukünftig wird es Buttermilch in unserem Sortiment geben.</blockquote>												
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+		</div><!--End of the Row-->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/joghurt.jpg">
+					</div>
+					<div class="col-md-8">
+						<cite>Frischkäse / Joghurt</cite>
+						<hr class="clients-hr">
+						<blockquote> Wir bieten neben "Jersey Gold Naturjoghurt" auch "Jersey Gold Frischkäse" in den Geschmacksrichtungen: "Jersey Gold Natur", "jersey Gold Dill", "Jersey Gold Bärlauch" und "Jersey Gold Gartenkräuter" an.</blockquote>											
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/kaese.jfif">
+					</div>
+					<div class="col-md-8">
+						<cite>Käse ("Jersey Gold Käse")</cite>
+						<hr class="clients-hr">
+						<blockquote>Wir bieten in handlichen portionen "Jersey Gold Käse", in den Geschmackssorten:<br>"Jersey Gold Natur"<br>"Jersey Gold Kreuzkümmel"<br>								"Jersey Gold Bockshornklee"<br>"Jersey Gold Kräuter der provence"<br>"Jersey Gold Dill"</blockquote>											
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+		</div><!--End of the Row-->
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/butter.jpg">
+					</div>
+					<div class="col-md-8">
+						<cite>Butter</cite>
+						<hr class="clients-hr">
+						<blockquote>Zukünftig haben wir geplant, auch "Jersey Gold Butter", sowie "Jersey Gold Buttermilch"	zu produzieren und in unserem Sortiment	anzubieten.</blockquote>										
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="img/eier.png">
+					</div>
+					<div class="col-md-8">
+						<cite>Eier</cite>
+						<hr class="clients-hr">
+						<blockquote>Frische Eier von glücklichen und freilaufenden Hühnern.</blockquote>						
+					</div>
+				</div>
+			</div>	<!--End of the col-md-6-->		
+		</div><!--End of the Row-->
+		<!--Start Jumbotron-->
+		<!-- <div class="jumbotron">
+			
+		</div> -->
+		<!--End of the Jumbotron-->		
+	</div>
+	<!-- End Clients Section-->	
+	
+	<!-- Start Contact Section-->
+	<div id="contact" class="offset">	
+		<footer>
+			<div class="row justify-content-center">
+				<div class="col-md-7 text-center">
+					<img src="img/mainImage.jpg">
+					<h4>Impressum</h4>
+					<p>Name und Anschrift: Jurgen Kouwert  Am Anger 7  04860 Torgau / OT Zinna</p>
+					<p>Telefon: 03421 713641</p>
+					<p>E-Mail: milchviehbetrieb@kouwert.de</p>
+					<p>Umsatzsteuer-Identifikationsnummer: DE 182980933</p>
+					<p>Inhaltlich verantwortlich: C. Kouwert</p>
+					<br>
+					<p>Haftungshinweis</p>
+					<p>Das Landgericht Hamburg hat mit Urteil vom 12.05.1998 entschieden, dass man durch die Ausbringung eines Links die Inhalte der gelinkten Seite ggf. mit zu verantworten hat. Dies kann -so das LG- nur dadurch verhindert werden, dass man sich ausdrücklich von dieses Inhalten distanziert. Wir möchten ausdrücklich betonen, dass wir keinerlei Einfluß auf die Gestaltung und die Inhalte der gelinkten Seiten haben. Deshalb distanzieren wir uns ausdrücklich von allen Inhalten aller gelinkten Seiten auf dieser gesamten Website/Homepage inkl. aller Unterseiten.</p>
+					
+					<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>					
+					<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+				</div>	
+				<hr class="socket">				
+			</div>
+		</footer>	
+	</div>
+	<!-- End Contact Section-->
+	
+	<!--- Script Source Files -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<!--- End of Script Source Files -->
+	
+	</body>
+	</html>
+	
